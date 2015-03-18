@@ -1,18 +1,43 @@
-\documentclass[10pt,a4paper,draft]{article}
+\documentclass[twoside]{report}
 \usepackage{subfiles}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage [danish] {babel}
+\usepackage[top=2cm, bottom=2cm,left=2.5cm, right=2.5cm, a4paper]{geometry}
+\usepackage{fancyhdr}
+\fancypagestyle{plain}{}
+\pagestyle{fancy}
+\lhead{\leftmark}
+\chead{}
+\rhead{\bfseries Komplikation med opløsning i 2D/3D spil}
+\lfoot{David Recke, Emil Vad, Simon Vinther}
+\cfoot{}
+\rfoot{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+
+
 \author{David Recke, Emil Vad, Simon Vinther}
 \title{Komplikationer med skærmopløsning i et 2D/3D miljø}
+
 \begin{document}
+
 	\maketitle
-	
-	\section{Forord}		
+	\tableofcontents
+		
+	\chapter{Introduktion}
+		\subsection{Forord}
 		\subfile{Forord.tex}
 
-	\section{Abstract}
+	\subsection{Abstract}
 		\subfile{Abstract.tex}
+
+	\clearpage
+
+
+	\appendix
 
 \end{document}
