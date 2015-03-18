@@ -1,2 +1,0 @@
-﻿Når man skal konstruer et spil skal det kunne spilles på mange forskelige plaformer med forskelligt hardware og hvis du skal alle spiller disse forskellige plaformer skal kunne få den bedst mulig oplevedes til det hardware de har bliver du nød til at have forskellige skærmopløsninger. 
-Når man har forskellige skærmopløsning i sit spiler kan der opstå en række problemer som du bliver nød til at løse ved disse kan problemer kan summeres ned til tre: forskellige opløsninger af din texturers , forskelige  accept ratio og scallering der ødelægger spillet.
