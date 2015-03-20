@@ -1,22 +1,22 @@
-\documentclass[twoside]{report}
+\documentclass{report}
 \usepackage{subfiles}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage [danish] {babel}
-\usepackage[top=2cm, bottom=2cm,left=2.5cm, right=2.5cm, a4paper]{geometry}
+\usepackage[bottom = 1.5cm, left = 1.5cm, right = 1.5cm, a4paper]{geometry}
 \usepackage{fancyhdr}
 \fancypagestyle{plain}{}
 \pagestyle{fancy}
 \lhead{\leftmark}
 \chead{}
-\rhead{\bfseries Komplikation med opløsning i 2D/3D spil}
-\lfoot{David Recke, Emil Vad, Simon Vinther}
 \cfoot{}
 \rfoot{\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.6pt}
+\rhead{\bfseries Komplikation med opløsning i 2D/3D spil}
+\lfoot{David Recke, Emil Vad, Simon Vinther}
 
 
 
@@ -25,8 +25,8 @@
 
 \begin{document}
 
-	\maketitle
-	\tableofcontents
+%	\maketitle
+%	\tableofcontents
 		
 	\chapter{Introduktion}
 		\subsection{Forord}
@@ -34,10 +34,14 @@
 
 	\subsection{Abstract}
 		\subfile{Abstract.tex}
+	
+	\input{txtFiles/Indledning.txt}
 
-	\clearpage
+	\clearpage	
+	\chapter{Bilag}
 
 
 	\appendix
+	\subfile{Bilag.tex}
 
 \end{document}
