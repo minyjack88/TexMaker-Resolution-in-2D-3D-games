@@ -1,12 +1,14 @@
 \documentclass{report}
+\usepackage[backend=biber]{biblatex}
 \usepackage{subfiles}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
-\usepackage [danish] {babel}
+\usepackage[english]{babel}
 \usepackage[bottom = 1.5cm, left = 1.5cm, right = 1.5cm, a4paper]{geometry}
 \usepackage{fancyhdr}
+\addbibresource{kilder.bib}
 \fancypagestyle{plain}{}
 \pagestyle{fancy}
 \lhead{\leftmark}
@@ -17,7 +19,6 @@
 \renewcommand{\footrulewidth}{0.6pt}
 \rhead{\bfseries Komplikation med opløsning i 2D/3D spil}
 \lfoot{David Recke, Emil Vad, Simon Vinther}
-
 
 
 \author{David Recke, Emil Vad, Simon Vinther}
@@ -31,17 +32,17 @@
 	\chapter{Introduktion}
 		\subsection{Forord}
 		\subfile{Forord.tex}
-
 	\subsection{Abstract}
 		\subfile{Abstract.tex}
+		\cite{Garat}
+		\cite{goossens93}
+		\cite{derbo}
 	
 	\input{txtFiles/Indledning.txt}
 
 	\clearpage	
 	\chapter{Bilag}
+\printbibliography
 
-
-	\appendix
-	\subfile{Bilag.tex}
 
 \end{document}

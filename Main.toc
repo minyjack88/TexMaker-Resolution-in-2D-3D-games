@@ -1,5 +1,0 @@
-\select@language {danish}
-\contentsline {chapter}{\numberline {1}Introduktion}{2}
-\contentsline {subsection}{\numberline {1.0.1}Forord}{2}
-\contentsline {subsection}{\numberline {1.0.2}Abstract}{2}
-\contentsline {chapter}{\numberline {2}Bilag}{3}

@@ -1,6 +1,8 @@
 ﻿2d pa Andriod hvordan man kan komme uden om problemet 
 http://blog.gemserk.com/2013/01/22/our-solution-to-handle-multiple-screen-sizes-in-android-part-one/ 
 
+\clearpage
+
 Gammel artikel
 http://androidandme.com/2009/11/news/complications-looming-for-android-developers/
 
