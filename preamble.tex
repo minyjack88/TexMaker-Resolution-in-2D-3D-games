@@ -6,18 +6,14 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage[english]{babel}
-\usepackage[bottom = 1.5cm, left = 1.5cm, right = 1.5cm, a4paper]{geometry}
+\usepackage[top = 2cm, bottom = 1.5cm, left = 1.5cm, right = 1.5cm, a4paper]{geometry}
+\usepackage{lastpage}
 \usepackage{fancyhdr}
+\usepackage{graphicx}
 \addbibresource{kilder.bib}
 \fancypagestyle{plain}{}
-\pagestyle{fancy}
-\lhead{\leftmark}
-\chead{}
-\cfoot{}
-\rfoot{\thepage}
-\renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0.6pt}
-\rhead{\bfseries Komplikation med opløsning i 2D/3D spil}
+\author{David Recke, Emil Vad, Simon Vinther}
+\title{Komplikationer med skærmopløsning i et 2D/3D miljø}
 
 \makeatletter
 \def\@makechapterhead#1{%

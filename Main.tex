@@ -1,15 +1,26 @@
 \input{preamble.tex}
 
-\lfoot{David Recke, Emil Vad, Simon Vinther}
-\author{David Recke, Emil Vad, Simon Vinther}
-\title{Komplikationer med skærmopløsning i et 2D/3D miljø}
-
 \begin{document}
 
 	\maketitle
-	
+
+	\newpage
+		\pagestyle{plain}
+		\lhead{} \chead{} \rhead{} \lfoot{} \cfoot{} \rfoot{} 
+
 	\tableofcontents
 	
+	\newpage	
+	
+	\pagestyle{fancy}
+		\lhead{\leftmark}
+		\lfoot{David Recke, Emil Vad, Simon Vinther}
+		\rfoot{\thepage\ af \pageref{LastPage}}
+		\rhead{\bfseries Komplikation med opløsning i 2D/3D spil}	
+		\renewcommand{\headrulewidth}{0.4pt}
+		\renewcommand{\footrulewidth}{0.4pt}
+	
+	\setcounter{page}{1}	
 	\chapter{Introduktion}
 
 		\section{Abstract}

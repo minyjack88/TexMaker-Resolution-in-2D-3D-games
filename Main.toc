@@ -2,16 +2,16 @@
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Introduktion}{2}
+\contentsline {chapter}{\numberline {1}Introduktion}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Abstract}{2}
+\contentsline {section}{\numberline {1.1}Abstract}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Forord}{2}
+\contentsline {section}{\numberline {1.2}Forord}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Aspekt ratio}{3}
+\contentsline {chapter}{\numberline {2}Aspekt ratio}{2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Field of View}{3}
+\contentsline {section}{\numberline {2.1}Field of View}{2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Letterbox}{3}
+\contentsline {section}{\numberline {2.2}Letterbox}{2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Virtual viewport}{4}
+\contentsline {section}{\numberline {2.3}Virtual viewport}{3}

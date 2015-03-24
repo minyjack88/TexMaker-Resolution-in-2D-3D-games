@@ -4,10 +4,15 @@ Aspekt ratio refererer til den proportionelle forskel mellem en skærms højde o
 
 At skifte mellem to forskellige opløsninger, som deler det samme aspekt ratio, er relativt simpelt, da teksturer blot kan skaleres til at have en anden størrelse. Så længe at ratioen er den samme, og teksturen bliver skaleret ned til en dårligere opløsning, er der generelt ikke et problem.
 
-Problematikken opstår når at aspekt ratioen ændres, da en skalering ikke længere blot vil ændre på størrelsen af teksturen, men også på forholdet mellem bredden og højde. Det betyder at akserne ikke bliver skaleret synkront, hvilket kan give billedet et andet visuelt indtryk. Dette har været tilfældet i mange ældre spil, der originalt ikke var lavet til widescreen, blandt andet Warcraft 3. \cite{Wills} *Warcraft3 billeder*
+Problematikken opstår når at aspekt ratioen ændres, da en skalering ikke længere blot vil ændre på størrelsen af teksturen, men også på forholdet mellem bredden og højde. Det betyder at akserne ikke bliver skaleret synkront, hvilket kan give billedet et andet visuelt indtryk. Dette har været tilfældet i mange ældre spil, der originalt ikke var lavet til widescreen, blandt andet Warcraft 3. \cite{Wills}\\ 
+\begin{figure}	
+	\centering
+	\includegraphics[width = 0.5\linewidth]{TEST}
+	\caption{DOTA Wallpaper}		
+	\label{dotaWallpaper}
+\end{figure}
 
 \section{Field of View}
-
 Der er to måder at komme uden om dette problem på. Den ene er at ændre på field of view (FOV), som er hvor stor en del at spilleren ser af spilverdenen. Dette bringer imidlertidigt sine egne problemer på banen. Når FOV ændres, ændres der også på det output spilleren får på sin skærm, hvilket betyder at alle spillere ikke ser spilverdenen ens. Hvis at spillet ikke er kompetitivt spil, behøver dette ikke at være en bekymring, da spilleren kun spiller mod sig selv, og spillet i den forstand er ligestillet for alle. Hvis spillet derimod er kompetitivt, medfører det med stor sandsynlighed at spillere med et vist aspekt ratio har en fordel over dem med et andet aspekt ratio \cite{Atwood}.
 
 Hvis vi ser på et 2d spil, og forestiller os et endless runner spil, så som Robot Unicorn Attack, hvor at man kun ser hvad der er lige foran sin karakter, vil et bredere FOV betyde at man har længere til at forberede sig på de forhindringer der kommer forude.
