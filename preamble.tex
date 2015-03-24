@@ -1,0 +1,30 @@
+\documentclass[oneside]{book}
+\usepackage[backend=bibtex]{biblatex}
+\usepackage{subfiles}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[english]{babel}
+\usepackage[bottom = 1.5cm, left = 1.5cm, right = 1.5cm, a4paper]{geometry}
+\usepackage{fancyhdr}
+\addbibresource{kilder.bib}
+\fancypagestyle{plain}{}
+\pagestyle{fancy}
+\lhead{\leftmark}
+\chead{}
+\cfoot{}
+\rfoot{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.6pt}
+\rhead{\bfseries Komplikation med opløsning i 2D/3D spil}
+
+\makeatletter
+\def\@makechapterhead#1{%
+  \vspace*{50\p@}%
+  {\parindent \z@ \raggedright \normalfont
+    \interlinepenalty\@M
+    \Huge\bfseries  \thechapter.\quad #1\par\nobreak
+    \vskip 40\p@
+  }}
+\makeatother

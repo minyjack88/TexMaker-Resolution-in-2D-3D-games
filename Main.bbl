@@ -1,0 +1,182 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.4 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{Apple}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Apple}{A.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{A1}
+  \strng{fullhash}{A1}
+  \field{sortinit}{A}
+  \field{title}{What are Letterboxing, Pillarboxing and Windowboxing?}
+  \verb{url}
+  \verb https://support.apple.com/en-us/HT204429
+  \endverb
+  \field{journaltitle}{apple}
+  \field{year}{2015}
+\endentry
+
+\entry{Atwood}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Atwood}{A.}%
+     {Jeff}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AJ1}
+  \strng{fullhash}{AJ1}
+  \field{sortinit}{A}
+  \field{title}{Widescreen and FOV}
+  \verb{url}
+  \verb http://blog.codinghorror.com/widescreen-and-fov/
+  \endverb
+  \field{journaltitle}{codinghorror}
+  \field{year}{2007}
+\endentry
+
+\entry{gemserk}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Garat}{G.}%
+     {Rubén}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Coppes}{C.}%
+     {Ariel}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GRCA1}
+  \strng{fullhash}{GRCA1}
+  \field{sortinit}{G}
+  \field{title}{Our solution to handle multiple screen sizes in android part
+  one}
+  \verb{url}
+  \verb http://blog.gemserk.com/2013/01/22/our-solution-to-handle-multiple-scre
+  \verb en-sizes-in-android-part-one/
+  \endverb
+  \field{journaltitle}{Gemserk Blog}
+  \field{year}{2013}
+\endentry
+
+\entry{Gibson}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Gibson}{G.}%
+     {Andrew~S.}{A.~S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GAS1}
+  \strng{fullhash}{GAS1}
+  \field{sortinit}{G}
+  \field{title}{Aspect Ratio: What it is and Why it Matters}
+  \verb{url}
+  \verb http://digital-photography-school.com/aspect-ratio-what-it-is-and-why-i
+  \verb t-matters/
+  \endverb
+  \field{journaltitle}{digital-photography-school}
+  \field{year}{2013}
+\endentry
+
+\entry{computerhope}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Hope}{H.}%
+     {Computer}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HC1}
+  \strng{fullhash}{HC1}
+  \field{sortinit}{H}
+  \field{title}{Letterbox}
+  \verb{url}
+  \verb http://www.computerhope.com/jargon/l/letterbo.htm
+  \endverb
+  \field{journaltitle}{Computer Hope support}
+  \field{year}{x}
+\endentry
+
+\entry{Steam}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Steam}{S.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{S1}
+  \strng{fullhash}{S1}
+  \field{sortinit}{S}
+  \field{title}{Steam Hardware and Software Survey: February 2015}
+  \verb{url}
+  \verb http://store.steampowered.com/hwsurvey
+  \endverb
+  \field{journaltitle}{steampowered}
+  \field{year}{2015}
+\endentry
+
+\entry{CommonResolutions}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Wikipedia}{W.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{W1}
+  \strng{fullhash}{W1}
+  \field{sortinit}{W}
+  \field{title}{List of common resolutions}
+  \verb{url}
+  \verb http://en.wikipedia.org/wiki/List_of_common_resolutions
+  \endverb
+  \field{journaltitle}{wikipedia}
+  \field{year}{sidste revidering i 2015}
+\endentry
+
+\entry{Wills}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Wills}{W.}%
+     {Caron}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{WC1}
+  \strng{fullhash}{WC1}
+  \field{sortinit}{W}
+  \field{title}{Older games with 4:3 aspect ratio are stretched in full screen}
+  \verb{url}
+  \verb https://www.codeweavers.com/support/wiki/linux/faq/43_game_stretch
+  \endverb
+  \field{journaltitle}{codeweavers}
+  \field{year}{2014}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

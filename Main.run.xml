@@ -41,16 +41,16 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="1">
+  <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>Main.bcf</file>
+      <file>Main.aux</file>
+      <file>Main-blx.bib</file>
     </provides>
     <requires type="dynamic">
       <file>Main.bbl</file>
     </requires>
     <requires type="static">
-      <file>blx-dm.def</file>
       <file>blx-compat.def</file>
       <file>biblatex.def</file>
       <file>numeric.bbx</file>
@@ -60,14 +60,15 @@
       <file>english.lbx</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="1">
-    <generic>biber</generic>
+  <external package="biblatex" priority="5" active="0">
+    <generic>bibtex</generic>
     <cmdline>
-      <binary>biber</binary>
+      <binary>bibtex</binary>
+      <option>-min-crossrefs 2</option>
       <infile>Main</infile>
     </cmdline>
     <input>
-      <file>Main.bcf</file>
+      <file>Main.aux</file>
     </input>
     <output>
       <file>Main.bbl</file>
@@ -76,10 +77,14 @@
       <file>Main.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>Main.bcf</file>
+      <file>Main.aux</file>
+      <file>Main-blx.bib</file>
     </requires>
     <requires type="editable">
       <file>kilder.bib</file>
+    </requires>
+    <requires type="static">
+      <file>biblatex.bst</file>
     </requires>
   </external>
 </requests>

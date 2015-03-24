@@ -1,5 +1,10 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Main.aux
-I found no \citation commands---while reading file Main.aux
-I found no \bibdata command---while reading file Main.aux
-I found no \bibstyle command---while reading file Main.aux
-(There were 3 error messages)
+The style file: biblatex.bst
+Database file #1: Main-blx.bib
+Database file #2: kilder.bib
+I was expecting a `,' or a `}'---line 117 of file kilder.bib
+ : @article{Common 
+ :                 Resolutions,
+I'm skipping whatever remains of this entry
+Biblatex version: 2.9
+(There was 1 error message)

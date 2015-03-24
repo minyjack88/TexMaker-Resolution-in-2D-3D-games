@@ -1,48 +1,28 @@
-\documentclass{report}
-\usepackage[backend=biber]{biblatex}
-\usepackage{subfiles}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage[english]{babel}
-\usepackage[bottom = 1.5cm, left = 1.5cm, right = 1.5cm, a4paper]{geometry}
-\usepackage{fancyhdr}
-\addbibresource{kilder.bib}
-\fancypagestyle{plain}{}
-\pagestyle{fancy}
-\lhead{\leftmark}
-\chead{}
-\cfoot{}
-\rfoot{\thepage}
-\renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0.6pt}
-\rhead{\bfseries Komplikation med opløsning i 2D/3D spil}
+\input{preamble.tex}
+
 \lfoot{David Recke, Emil Vad, Simon Vinther}
-
-
 \author{David Recke, Emil Vad, Simon Vinther}
 \title{Komplikationer med skærmopløsning i et 2D/3D miljø}
 
 \begin{document}
 
-%	\maketitle
-%	\tableofcontents
-		
-	\chapter{Introduktion}
-		\subsection{Forord}
-		\subfile{Forord.tex}
-	\subsection{Abstract}
-		\subfile{Abstract.tex}
-		\cite{Garat}
-		\cite{goossens93}
-		\cite{derbo}
+	\maketitle
 	
+	\tableofcontents
+	
+	\chapter{Introduktion}
+
+		\section{Abstract}
+		\subfile{Abstract.tex}		
+		
+		\section{Forord}
+		\subfile{Forord.tex}
+		
+		\subfile{AspectRatio.tex}
+
+		
 	\input{txtFiles/Indledning.txt}
 
-	\clearpage	
-	\chapter{Bilag}
-\printbibliography
-
+	\printbibliography
 
 \end{document}
