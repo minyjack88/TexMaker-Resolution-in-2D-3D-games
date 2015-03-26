@@ -1,0 +1,11 @@
+CS:GO i et 4:3 aspekt ratio
+CS:GO i et 16:9 aspekt ratio
+
+Hearthstone i et 4:3 aspekt ratio
+Hearthstone i et 16:9 aspekt ratio
+
+Speedrunners i et 4:3 aspekt ratio
+Speedrunners i et 16:9 aspekt ratio
+
+Warcraft 3 i dets originale 4:3 aspekt ratio
+Warcraft 3 skaleret asynkront til et 16:9 aspekt ratio
