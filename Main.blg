@@ -10,5 +10,17 @@ You're missing a field part---line 138 of file kilder.bib
  : url = 
  :       “http://blog.deepworldgame.com/post/52235728843/game-art-tips-raster-vs-vector-vs-pixel-art”
 I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 143 of file kilder.bib
+ : title = "
+ :          Content-Adaptive Image Downscaling",
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 149 of file kilder.bib
+ : title = "
+ :          Digital Image Interpolation",
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 157 of file kilder.bib
+ : title = "
+ :          Android Devices - CPUMark Rating",
+I'm skipping whatever remains of this entry
 Biblatex version: 2.9
-(There were 2 error messages)
+(There were 5 error messages)

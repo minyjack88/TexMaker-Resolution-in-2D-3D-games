@@ -13,8 +13,8 @@ Problematikken opstår når at aspekt ratioen ændres, da en skalering ikke læn
 \caption{Warcraft 3 i dets originale 4:3 aspekt ratio}    
 \label{Warcraft_4,3}}
 \qquad
-\begin{minipage}{7cm}
-\includegraphics[width = 7cm]{billeder/Warcraft_16,9}
+\begin{minipage}{9.33cm}
+\includegraphics[width = 9.33cm]{billeder/Warcraft_16,9}
 \caption{Warcraft 3 skaleret asynkront til et 16:9 aspekt ratio}    
 \label{Warcraft_16,9}
 \end{minipage}
@@ -34,12 +34,12 @@ Hvis vi ser på et 3d spil, så som CS:GO, vil et bredere field of view betyde a
 \centering
 \parbox{7cm}{
 \includegraphics[width = 7cm]{billeder/CS_GO_4,3}
-\caption{CS:GO med aspect ratio 4:3}    
+\caption{CS:GO med aspekt ratio 4:3}    
 \label{CS_GO_4,3}}
 \qquad
-\begin{minipage}{7cm}
-\includegraphics[width = 7cm]{billeder/CS_GO_16,9}
-\caption{CS:GO med aspect ratio 16:9}    
+\begin{minipage}{9.33cm}
+\includegraphics[width = 9.33cm]{billeder/CS_GO_16,9}
+\caption{CS:GO med aspekt ratio 16:9}    
 \label{CS_GO_16,9}
 \end{minipage}
 \end{figure} 
@@ -54,12 +54,12 @@ Et af disse spil er Speedrunners. Formålet med Speedrunners er at løbe om kap,
 \centering
 \parbox{7cm}{
 \includegraphics[width = 7cm]{billeder/Speedrunners_4,3}
-\caption{Speedrunners med aspect ratio 4:3}    
+\caption{Speedrunners med aspekt ratio 4:3}    
 \label{Speedrunners_4,3}}
 \qquad
-\begin{minipage}{7cm}
-\includegraphics[width = 7cm]{billeder/Speedrunners_16,9}
-\caption{Speedrunners med aspect ratio 16:9}    
+\begin{minipage}{9.33cm}
+\includegraphics[width = 9.33cm]{billeder/Speedrunners_16,9}
+\caption{Speedrunners med aspekt ratio 16:9}    
 \label{Speedrunners_16,9}
 \end{minipage}
 \end{figure}
@@ -76,12 +76,12 @@ Dette koncept benyttes også på andre platforme. F.eks. har det online kortspil
 \centering
 \parbox{7cm}{
 \includegraphics[width = 7cm]{billeder/Heathstone_4,3}
-\caption{Hearthstone med aspect ratio 4:3}
+\caption{Hearthstone med aspekt ratio 4:3}
 \label{Hearthstone_4,3}}
 \qquad
-\begin{minipage}{7cm}
-\includegraphics[width = 7cm]{billeder/Heathstone_16,9}
-\caption{Hearthstone med aspect ratio 16:9}
+\begin{minipage}{9.33cm}
+\includegraphics[width = 9.33cm]{billeder/Heathstone_16,9}
+\caption{Hearthstone med aspekt ratio 16:9}
 \label{Hearthstone_16,9}
 \end{minipage}
 \end{figure}
