@@ -1,4 +1,4 @@
-//a struct to repsent a point in a 2 aksese
+//A struct to represent a point in 2 axes.
 struct Point
 {
    public float x = 0;
@@ -7,31 +7,31 @@ struct Point
 
 class Kamera
   {
-    //The Position of camera in game world koordinate
-    Point postion;
+    //The Position of the camera in game world coordinates.
+    Point position;
 
     int screenHeight;
     int screenWidth;
 
-    // the amount of x and y game world koordinate the kamera can see
+    // the amount of width(x) and hight(y) game world coordinates the camera can see.
     static const float maxXOnScreen = 100;
     static const float maxYOnScreen = 100;
 
-    Kamera(Point postion, int screenHeight, int screenWidth)
+    Kamera(Point position, int screenHeight, int screenWidth)
      {
-         this.postion = postion;
+         this.position = position;
          this.screenHeight = screenHeight;
          this.screenWidth = screenWidth;
      }
 
-     Point PostionOnScreen(Point postion)
+    Point positionOnScreen(Point position)
      {
-         Point newPostion;
-         newPostion.x = screenWidth/2 + 
-         ( (postion.x - this.postion.x)* screenWidth/maxXOnScreen);
-         newPostion.y = screenHeight / 2 + 
-         ((postion.y - this.postion.y) * screenWidth / maxXOnScreen);
-         return newPostion;
+         Point newPosition;
+         newPosition.x = screenWidth / 2 +
+         ((position.x - this.position.x) * screenWidth / maxXOnScreen);
+         newposition.y = screenHeight / 2 +
+         ((position.y - this.position.y) * screenWidth / maxXOnScreen);
+         return newPosition;
      }
 
   }

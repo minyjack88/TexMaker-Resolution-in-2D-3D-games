@@ -16,6 +16,30 @@
   {}
 \endgroup
 
+\entry{PassMark}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {=}{.}%
+     {PassMark”}{P.}%
+     {title}{t.}%
+     {}{}}%
+  }
+  \strng{namehash}{Pt1}
+  \strng{fullhash}{Pt1}
+\endentry
+
+\entry{unity3d}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {=}{.}%
+     {}{}%
+     {unity3d”~title}{u.~t.}%
+     {}{}}%
+  }
+  \strng{namehash}{ut1}
+  \strng{fullhash}{ut1}
+\endentry
+
 \entry{Apple}{article}{}
   \name{author}{1}{}{%
     {{}%
@@ -117,6 +141,103 @@
   \endverb
   \field{journaltitle}{Computer Hope support}
   \field{year}{x}
+\endentry
+
+\entry{Jonkers}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Jonkers}{J.}%
+     {Diorgo” title~=}{D.~t.~.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{JDt1}
+  \strng{fullhash}{JDt1}
+  \field{sortinit}{J}
+\endentry
+
+\entry{Kopf}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Kopf}{K.}%
+     {Johannes}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Shamir}{S.}%
+     {Ariel}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Peers}{P.}%
+     {Pieter“ title~=}{P.~t.~.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KJSAPPt1}
+  \strng{fullhash}{KJSAPPt1}
+  \field{sortinit}{K}
+\endentry
+
+\entry{deepworldgame}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Laurence}{L.}%
+     {Mike}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pearl}{P.}%
+     {Jason}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Stephens}{S.}%
+     {Quinn}{Q.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LMPJSQ1}
+  \strng{fullhash}{LMPJSQ1}
+  \field{sortinit}{L}
+  \field{title}{Game Art Tips! Raster vs. Vector vs. Pixel Art - The Pros and
+  Cons}
+  \field{journaltitle}{deepworldgame blog}
+  \field{year}{2013}
+\endentry
+
+\entry{Martin}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Martin}{M.}%
+     {Ian}{I.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MI1}
+  \strng{fullhash}{MI1}
+  \field{sortinit}{M}
+  \field{title}{Making Your PC Game Resolution Agnostic - Solving the
+  Resolution Problem}
+  \verb{url}
+  \verb http://www.gamasutra.com/blogs/IanMartin/20141218/232772/Making_Your_PC
+  \verb _Game_Resolution_Agnostic __Solving_the_Resolution_Problem.php
+  \endverb
+  \field{journaltitle}{Gamesutra}
+  \field{year}{2014}
+\endentry
+
+\entry{McHugh}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {McHugh}{M.}%
+     {Sean” title~=}{S.~t.~.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MSt1}
+  \strng{fullhash}{MSt1}
+  \field{sortinit}{M}
 \endentry
 
 \entry{Steam}{article}{}

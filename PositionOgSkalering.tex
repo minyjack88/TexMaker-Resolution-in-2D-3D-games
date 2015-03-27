@@ -1,0 +1,88 @@
+\documentclass[Main.tex]{PositionOgSkalering}
+
+\begin{document}
+\chapter{Position og skalering}
+Hvis man lave et spil uden et moderne framework eller engine som er 2d baseret, ligner det en nem løsning at basere sit spil på skærm koordinator. Vi har et eksempel på dette type system fra et forrigt projekt kaldet MAD \ref{MADscaling1}, og har ud fra det og andre projekter lært hvad problemet ved skærm koordinater, også kaldt pixel koordinater, er, hvilket for det meste hænger sammen med skærmopløsningen.
+
+\begin{figure}[h]
+\centering
+\parbox{7cm}{   
+\includegraphics[width = 7cm]{billeder/MADscaling1}
+\caption{MAD i produktions opløsning}    
+\label{MADscaling1}}
+\qquad
+\begin{minipage}{7cm}
+\includegraphics[width = 7cm]{billeder/MADscaling2}
+\caption{MAD i 1280x800 opløsning med skærm kordinator}    
+\label{MADscaling2}
+\end{minipage}
+\end{figure}
+
+De største problemer ved et skærm koordinatsystem opstår når at skærmstørrelsen bliver ændret. En situation opstår eksempelvis hvis man vil have et objekt nede i det højre hjørne af skærmen, som ikke flytter sig relativt til skærmens størrelse. På figur \ref{MADscaling2} og \ref{MADscaling1} kan man se at forskellen på hvordan spillet ser ud i to forskellige opløsninger. På figur \ref{MADscaling1} er det nederste højre hjørne koordinatet 1290,690, og på det figur \ref{MADscaling2} er det 1280,800. Fordi det ene spil er 110 pixel højere end det originale, betyder det at der er 110 pixels ned af y-aksen, som programmet ikke bruger, da alle spilobjekternes positioner er baseret på koordinater.
+
+Hvis man så også skal skalerer alle spilobjekterne så de passer bedre til den nye opløsning, skal de skaleres med ca. 16\% \begin{math} (110 \div 690  = 0.1594203 \approx 0.16) \end{math}på y-aksen. Udover at det kommer til at se mærkeligt ud når spilobjekterne bliver skaleret, passer deres nye størrelse ikke til deres placering, se figur \ref{MADscaling3}. Dette kan bedre ses på et mere ekstremt eksempel, som figur \ref{MADscaling4} hvor opløsningen er 860x345. Dette forårsage at man ikke kan se andet end baggrunden, fordi alle objekterne starter i højere koordinater end hvad skærmen indeholder.
+
+\begin{figure}[h]
+\centering
+\parbox{7cm}{   
+\includegraphics[width = 7cm]{billeder/MADscaling3}
+\caption{MADscaling3}    
+\label{MADscaling3}}
+\qquad
+\begin{minipage}{7cm}
+\includegraphics[width = 7cm]{billeder/MADscaling4}
+\caption{MADscaling4}    
+\label{MADscaling4}
+\end{minipage}
+\end{figure}
+
+Et andet problem kan være spil objekternes kollisionsboks, da deres størrelse også kan være i pixels. Hvis et spilobjekts tekstur nedskaleres uden at dets kollisions boks skaleres, vil objektets visuelle repræsentation være ude af sync med dets faktiske position og størrelse. Se figur \ref{MADscaling5} fra MAD, hvor positionen følger med opløsningen, men nogle af kollisionsboksene ikke gør. Da spillet blev lavet, var de fleste objekters kollisionsbokse baseret på deres sprites størrelse, hvilket er en god idé hvis man vil skalere senere. 
+Det giver dog sjældent den ønskede størrelse af kollisionbokse, da sprites ofte er større end du vil have din kollisionboks især i 2d spil som platformers  \cite{Jonkers}.
+
+\begin{figure}[h]
+\centering
+\parbox{7cm}{   
+\includegraphics[width = 7cm]{billeder/MADscaling5}
+\caption{MAD hvor kollisionsboksene ikke er relative til spilobjekternes størrelse}    
+\label{MADscaling5}}
+\qquad
+\begin{minipage}{7cm}
+\includegraphics[width = 7cm]{billeder/MADscaling6}
+\caption{MAD hvor kollisionsboksene er relative til spilobjekternes størrelse}    
+\label{MADscaling6}
+\end{minipage}
+\end{figure}
+
+En løsning til dette problem, er ved at lave koordinaterne baseret på procenter i forhold til skærmens størrelse. Hvis man vil placere et objekt et sted i spillet, skal dets koordinat være:
+\begin{math}
+\text{produktions X } \times (\text{faktisk skærmbredde} \div \text{produktions skærmbredde}),
+\text{produktions Y} \times (\text{faktisk skærmhøjde} \div \text{productions skærmhøjde})\end{math}
+Det sammen kan gøres med kollisions boksen, bare hvor det er i forhold til spriten:
+
+\begin{math}
+\text{produktions kollisions boks bredde} \times (\text{faktisk spritebredde} \div \text{produktions spritebredde}).
+\text{produktions kollisions boks højde} \times (\text{faktisk spritehøjde} \div \text{produktions spritehøjde}).  \end{math}
+
+Disse udregninger er brug I MAD. som det kan ses på figur \ref{MADscaling6}, og har løst problemerne involveret med fejlplaceret objekter og kollisionbokse.
+En anden løsning er at unlade at kode i skærm koordinator, og have game world koordinator, som ved hjælp af en kamera klasse, kan konverteres til skærm koordinator. Se kodeeksempel for et eksempel af en kamera klasse.
+
+Kamera klassen kender opløsningen, og kan tage højde for hvordan objekterne skal tegnes på skærmen. Dette er en løsning der skal implementeres fra starten af et projekt så det egner sig mere som en forebyggelse, end en løsning. Et kamera gør ofte koden meget nemmere at forstå, da spilverdenens koordinater giver mere mening end skærmkoordinater. 
+Mange moderne frameworks og engines bruger også spilverdenens koordinater, eksempelvis Unity \cite{unity3d}, da der er så mange problemer med skærmkoordinater. Hvis skærmkoordinater bliver brugt, er det på en måde der er i forhold til skærmen størrelse.
+
+\begin{figure}[ht]
+\lstset{numbers=left, language=[Sharp]C}
+\lstinputlisting[caption = Et eksempel på en kamera klasse, label = kameraKlasse]{kode/Kamera.cs}
+\end{figure}
+
+
+\section{Tekstur skalering}
+
+I konstruktionen af assets til spil til digitale platforme, er det et krav at teksturer og sprites skal skalere efter størrelsen på skærmen af den givne platform. En umiddelbar løsning ville indebære at tegne alle visuelle assets i høj opløsning, derved er det sikret at en høj kvalitet bliver opnået på høje skærmopløsninger \cite{deepworldgame}.
+
+Der er et problem når man skalerer nedad. Hvis man f.eks. skalerer fire pixels ned til det halve, får man to pixels, men skalere man tre pixels ned til det halve, opstår der 1,5. Da man ikke kan have halve pixels, et det enten én eller to pixels man ender op med, hvilket kan få grafikken til at se aliased ud \cite{Martin}. Mange moderne algoritmer prøver selv at løse problemet så det er mindre tydeligt at teksturen er blevet skaleret.\cite{Kopf} Det kan dog stadig være synligt, og desuden tager det også lang tid at lave en tekstur med meget høj opløsning end et med lavere opløsning.
+
+En anden løsning er at lave teksturene med lav opløsning, og derefter skalerer dem op. Dette får dog teksturene til at se pixelerede ud \cite{McHugh}.
+En tredje måde at gøre det på er at lave vektorgrafik, da de skalerer bedst \cite{deepworldgame}. Det tager dog længere tid at lave vektorgrafik end normal grafik,\cite{deepworldgame} og derudover kræver vektorgrafik også mere cpu kraft, men mindre ram \cite{deepworldgame}. Derfor er der nogle platforme hvorpå vektorgrafik kan funker bedre end andre, da cpu kan varierer en del fra platform til platform \cite{PassMark}.
+
+Der er ikke en bedste måde at løse skaleringsproblemer på, da det afhænger meget af det spil man laver, og hvor lang tid man har til at lave det. Generelt er det en god idé at lave teksturer i høj opløsning, da meget morderen software sørger for at det stadig ser godt ud når det bliver nedskaleret.
+\end{document}
