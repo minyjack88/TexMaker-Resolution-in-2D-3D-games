@@ -6,5 +6,9 @@ I was expecting a `,' or a `}'---line 117 of file kilder.bib
  : @article{Common 
  :                 Resolutions,
 I'm skipping whatever remains of this entry
+You're missing a field part---line 138 of file kilder.bib
+ : url = 
+ :       “http://blog.deepworldgame.com/post/52235728843/game-art-tips-raster-vs-vector-vs-pixel-art”
+I'm skipping whatever remains of this entry
 Biblatex version: 2.9
-(There was 1 error message)
+(There were 2 error messages)

@@ -10,12 +10,12 @@ Problematikken opstår når at aspekt ratioen ændres, da en skalering ikke læn
 \centering
 \parbox{7cm}{   
 \includegraphics[width = 7cm]{billeder/Warcraft_4,3}
-\caption{Warcraft 3 med aspect ratio 4:3}    
+\caption{Warcraft 3 i dets originale 4:3 aspekt ratio}    
 \label{Warcraft_4,3}}
 \qquad
 \begin{minipage}{7cm}
 \includegraphics[width = 7cm]{billeder/Warcraft_16,9}
-\caption{Warcraft 3 med aspect ratio 16:9}    
+\caption{Warcraft 3 skaleret asynkront til et 16:9 aspekt ratio}    
 \label{Warcraft_16,9}
 \end{minipage}
 \end{figure}
@@ -85,5 +85,3 @@ Dette koncept benyttes også på andre platforme. F.eks. har det online kortspil
 \label{Hearthstone_16,9}
 \end{minipage}
 \end{figure}
-
-

@@ -1,4 +1,4 @@
-﻿//a struct to repsent a point in a 2 aksese
+//a struct to repsent a point in a 2 aksese
 struct Point
 {
    public float x = 0;
@@ -27,8 +27,10 @@ class Kamera
      Point PostionOnScreen(Point postion)
      {
          Point newPostion;
-         newPostion.x = screenWidth/2 + ( (postion.x - this.postion.x)* screenWidth/maxXOnScreen);
-         newPostion.y = screenHeight / 2 + ((postion.y - this.postion.y) * screenWidth / maxXOnScreen);
+         newPostion.x = screenWidth/2 + 
+         ( (postion.x - this.postion.x)* screenWidth/maxXOnScreen);
+         newPostion.y = screenHeight / 2 + 
+         ((postion.y - this.postion.y) * screenWidth / maxXOnScreen);
          return newPostion;
      }
 
