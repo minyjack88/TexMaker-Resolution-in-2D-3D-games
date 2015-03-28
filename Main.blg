@@ -6,29 +6,17 @@ You're missing a field part---line 14 of file kilder.bib
  : url = 
  :       “http://blog.deepworldgame.com/post/52235728843/game-art-tips-raster-vs-vector-vs-pixel-art”
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 19 of file kilder.bib
- : title = "
- :          Content-Adaptive Image Downscaling",
+You're missing a field part---line 30 of file kilder.bib
+ : url = 
+ :       “http://www.cambridgeincolour.com/tutorials/image-interpolation.htmf"
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 27 of file kilder.bib
- : title = "
- :          Digital Image Interpolation",
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 35 of file kilder.bib
- : title = "
- :          Android Devices - CPUMark Rating",
+You're missing a field part---line 38 of file kilder.bib
+ : url = 
+ :       “http://www.androidbenchmark.net/cpumark_chart.html"
 I'm skipping whatever remains of this entry
 Repeated entry---line 150 of file kilder.bib
  : @article{CommonResolutions
  :                           ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 168 of file kilder.bib
- : title = "
- :          11 Tips for making a fun platformer",
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 176 of file kilder.bib
- : title = "
- :          position",
-I'm skipping whatever remains of this entry
 Biblatex version: 2.9
-(There were 7 error messages)
+(There were 4 error messages)

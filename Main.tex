@@ -4,11 +4,22 @@
 
 	\maketitle
 
+\chapter*{Abstract}
+This article will highlight the specific issues that can arise in relation to a dynamic screen resolution, as well as different ways of handling them.
+When a game is required to be played on several screen resolutions, issues can arise, due to the fact that the gameworld will be represented differently. When a game is scaled to a different resolution, it can cause the graphics to produce poor results, which makes it important for the developers to take scaling into consideration when creating the game. Different resolutions can also cause a difference in gameplay, when the aspect ratio is changed, making it even more important to find the optimal way of solving the issues.
+This article is made for the e-bookanthology of EA Dania by three Computer Science students specializing in game development at EA Dania in Grenaa, Denmark.
+
+\chapter*{Forord}
+Denne artikel er lavet til spil datamatikernes akademisk formidlings projekt / E-bogsantologi for EA Dania. Artiklen er skrevet i tidsrummet fra mandag d. 16 marts til onsdag d. 1 april af tre spil datamatiker studerende ved EA Dania i Grenaa.
+Emnet omhandler hvilke komplikationer der kan opstå i forbindelse med valg af skærmopløsning i 2d og 3d spil, såvel som hvordan det kan forebygges. Der vil i denne artikel blive diskuteret de centrale problemstillinger der opstår, når at et spil skal kunne tilpasse sig mange forskellige skærmopløsninger, og hvordan det kan påvirke spilleren. 
+Det antages at læseren har en basal forståelse for spilprogrammering og koncepter involveret i spildesign.
+
 	\newpage
 		\pagestyle{plain}
-		\lhead{} \chead{} \rhead{} \lfoot{} \cfoot{} \rfoot{} 
-
+		\lhead{} \chead{} \rhead{} \lfoot{} \cfoot{} \rfoot{} 	
+	
 	\tableofcontents
+	
 	
 	\newpage	
 	
@@ -22,27 +33,22 @@
 	
 	\setcounter{page}{1}	
 		
-		\subfile{Introduktion.tex}		
-	
-		\clearpage		
+		\subfile{Introduktion.tex}
 		
+		\clearpage	
+		
+		\subfile{AspectRatio.tex}
+
+		\clearpage	
+	
 		\subfile{PositionOgSkalering.tex}
 		
-		\clearpage
-
-		\subfile{AspectRatio.tex}
-		
-		\clearpage
-		
+		\clearpage		
+			
 		\subfile{Konklusion.tex}
-
-\end{document}
 		
+		\clearpage
 		
-		
-		
-	\input{txtFiles/Indledning.txt}
-
 	\printbibliography
 
 \end{document}

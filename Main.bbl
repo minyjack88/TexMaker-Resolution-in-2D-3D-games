@@ -16,30 +16,6 @@
   {}
 \endgroup
 
-\entry{PassMark}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {=}{.}%
-     {PassMark”}{P.}%
-     {title}{t.}%
-     {}{}}%
-  }
-  \strng{namehash}{Pt1}
-  \strng{fullhash}{Pt1}
-\endentry
-
-\entry{unity3d}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {=}{.}%
-     {}{}%
-     {unity3d”~title}{u.~t.}%
-     {}{}}%
-  }
-  \strng{namehash}{ut1}
-  \strng{fullhash}{ut1}
-\endentry
-
 \entry{Apple}{article}{}
   \name{author}{1}{}{%
     {{}%
@@ -140,20 +116,26 @@
   \verb http://www.computerhope.com/jargon/l/letterbo.htm
   \endverb
   \field{journaltitle}{Computer Hope support}
-  \field{year}{x}
+  \field{year}{2015}
 \endentry
 
 \entry{Jonkers}{article}{}
   \name{author}{1}{}{%
     {{}%
      {Jonkers}{J.}%
-     {Diorgo” title~=}{D.~t.~.}%
+     {Diorgo}{D.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{JDt1}
-  \strng{fullhash}{JDt1}
+  \strng{namehash}{JD1}
+  \strng{fullhash}{JD1}
   \field{sortinit}{J}
+  \field{title}{11 Tips for making a fun platformer}
+  \verb{url}
+  \verb http://devmag.org.za/2011/01/18/11-tips-for-making-a-fun-platformer/
+  \endverb
+  \field{journaltitle}{Dev:Meg}
+  \field{year}{2011}
 \endentry
 
 \entry{Kopf}{article}{}
@@ -170,13 +152,20 @@
      {}{}}%
     {{}%
      {Peers}{P.}%
-     {Pieter“ title~=}{P.~t.~.}%
+     {Piete}{P.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{KJSAPPt1}
-  \strng{fullhash}{KJSAPPt1}
+  \strng{namehash}{KJSAPP1}
+  \strng{fullhash}{KJSAPP1}
   \field{sortinit}{K}
+  \field{title}{Content-Adaptive Image Downscaling}
+  \verb{url}
+  \verb http://research.microsoft.com/en-us/um/people/kopf/downscaling/paper/do
+  \verb wnscaling.pdf
+  \endverb
+  \field{journaltitle}{Microsoft research}
+  \field{year}{2013}
 \endentry
 
 \entry{deepworldgame}{article}{}
@@ -231,13 +220,32 @@
   \name{author}{1}{}{%
     {{}%
      {McHugh}{M.}%
-     {Sean” title~=}{S.~t.~.}%
+     {Sean}{S.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{MSt1}
-  \strng{fullhash}{MSt1}
+  \strng{namehash}{MS1}
+  \strng{fullhash}{MS1}
   \field{sortinit}{M}
+  \field{title}{Digital Image Interpolation}
+  \field{journaltitle}{Cambridge in colour}
+  \field{year}{2015}
+\endentry
+
+\entry{PassMark}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {PassMark}{P.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{P1}
+  \strng{fullhash}{P1}
+  \field{sortinit}{P}
+  \field{title}{Android Devices - CPUMark Rating}
+  \field{journaltitle}{Android benchmark}
+  \field{year}{2015}
 \endentry
 
 \entry{Steam}{article}{}
@@ -256,6 +264,25 @@
   \verb http://store.steampowered.com/hwsurvey
   \endverb
   \field{journaltitle}{steampowered}
+  \field{year}{2015}
+\endentry
+
+\entry{unity3d}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Unity3d}{U.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{U1}
+  \strng{fullhash}{U1}
+  \field{sortinit}{U}
+  \field{title}{Position}
+  \verb{url}
+  \verb http://docs.unity3d.com/ScriptReference/Transform-position.html
+  \endverb
+  \field{journaltitle}{ScriptReference}
   \field{year}{2015}
 \endentry
 
