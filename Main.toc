@@ -4,24 +4,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Introduktion}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Abstract}{1}
+\contentsline {section}{\numberline {1.1}Problemformulering}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Problemformulering}{1}
+\contentsline {section}{\numberline {1.2}Indledning}{1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Indledning}{1}
+\contentsline {chapter}{\numberline {2}Aspekt ratio}{2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Forord}{1}
+\contentsline {section}{\numberline {2.1}Field of View}{2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Position og skalering}{2}
+\contentsline {section}{\numberline {2.2}Letterbox}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Tekstur skalering}{3}
+\contentsline {section}{\numberline {2.3}Virtual viewport}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Aspekt ratio}{5}
+\contentsline {chapter}{\numberline {3}Position og skalering}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Field of View}{5}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Letterbox}{6}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Virtual viewport}{6}
+\contentsline {section}{\numberline {3.1}Tekstur skalering}{6}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Konklusion}{8}

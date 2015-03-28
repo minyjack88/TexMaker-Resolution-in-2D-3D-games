@@ -53,15 +53,13 @@ Det giver dog sjældent den ønskede størrelse af kollisionbokse, da sprites of
 \end{minipage}
 \end{figure}
 
-En løsning til dette problem, er ved at lave koordinaterne baseret på procenter i forhold til skærmens størrelse. Hvis man vil placere et objekt et sted i spillet, skal dets koordinat være:
+En løsning til dette problem, er ved at lave koordinaterne baseret på procenter i forhold til skærmens størrelse. Hvis man vil placere et objekt et sted i spillet, skal dets koordinat være: \\*\\*
 \begin{math}
-\text{produktions X } \times (\text{faktisk skærmbredde} \div \text{produktions skærmbredde}),
-\text{produktions Y} \times (\text{faktisk skærmhøjde} \div \text{productions skærmhøjde})\end{math}
-Det sammen kan gøres med kollisions boksen, bare hvor det er i forhold til spriten:
-
-\begin{math}
-\text{produktions kollisions boks bredde} \times (\text{faktisk spritebredde} \div \text{produktions spritebredde}).
-\text{produktions kollisions boks højde} \times (\text{faktisk spritehøjde} \div \text{produktions spritehøjde}).  \end{math}
+\text{Produktions X } \times (\text{faktisk skærmbredde} \div \text{produktions skærmbredde}), \\*
+\text{Produktions Y} \times (\text{faktisk skærmhøjde} \div \text{productions skærmhøjde})\end{math} \\* \\*
+Det sammen kan gøres med kollisions boksen, bare hvor det er i forhold til spriten:\\*\\*
+\begin{math}\text{Produktions kollisions boks bredde} \times (\text{faktisk spritebredde} \div \text{Produktions spritebredde}),\\*
+\text{produktions kollisions boks højde} \times (\text{faktisk spritehøjde} \div \text{produktions spritehøjde}).  \end{math}\\*
 
 Disse udregninger er brug I MAD. som det kan ses på figur \ref{MADscaling6}, og har løst problemerne involveret med fejlplaceret objekter og kollisionbokse.
 En anden løsning er at unlade at kode i skærm koordinator, og have game world koordinator, som ved hjælp af en kamera klasse, kan konverteres til skærm koordinator. Se kodeeksempel for et eksempel af en kamera klasse.
