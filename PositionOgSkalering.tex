@@ -2,7 +2,7 @@
 
 \begin{document}
 \chapter{Position og skalering}
-Hvis man lave et  2d spil uden et moderne framework eller engine, ligner det en nem løsning at basere sit spil på skærm koordinator. Vi har et eksempel på dette type system fra et forrigt projekt kaldet MAD \ref{MADscaling1}, og har ud fra det og andre projekter lært hvad problemet ved skærm koordinater, også kaldt pixel koordinater, er, hvilket for det meste hænger sammen med skærmopløsningen.
+Hvis man lave et  2d spil, ligner det en nem løsning at basere sit spil på skærm koordinator. Vi har et eks. på dette type system fra et forrigt projekt kaldet MAD \ref{MADscaling1}, og har ud fra det lært problemerne ved skærm koordinater, også kaldt pixel koordinater, hvilket for det meste hænger sammen med skærmopløsningen.
 
 \begin{figure}[h]
 \centering
@@ -60,17 +60,17 @@ Det sammen kan gøres med kollisions boksen, bare hvor det er i forhold til spri
 \begin{math}\text{Produktions kollisions boks bredde} \times (\text{faktisk spritebredde} \div \text{Produktions spritebredde}),\\*
 \text{produktions kollisions boks højde} \times (\text{faktisk spritehøjde} \div \text{produktions spritehøjde}).  \end{math}\\*
 
-Disse udregninger er brugt I MAD, se figur \ref{MADscaling6}, hvilket har løst problemerne involveret med fejlplaceret objekter og kollisionbokse.
+Disse udregninger er brugt I MAD, se figur \ref{MADscaling6}, hvilket har løst problemerne involveret med fejlplacering og kollisionbokse.
 En anden løsning er at unlade at kode i skærm koordinator, og have game world koordinator, som ved hjælp af en kamera klasse, kan konverteres til skærm koordinator. Se bilaget for et eksempel af en kamera klasse skrevet i C\#.
 Mange moderne frameworks og engines bruger også spilverdenens koordinater, eksempelvis Unity \cite{unity3d}.
 
 \section{Tekstur skalering}
 I konstruktionen af assets til spil, er det et krav at teksturer og sprites skal kunne skalere efter skærmopløsningen på en given platform. En umiddelbar løsning ville indebære at tegne alle visuelle assets i høj opløsning og dermed sikrer at en høj kvalitet bliver opnået på høje skærmopløsninger \cite{deepworldgame}.
 
-Der opstår dog problemer når man skalerer ned. Hvis man f.eks. skalerer fire pixels ned til det halve, får man to pixels, men skalere man tre pixels ned til det halve, får man 1,5 pixels. Da man ikke kan have halve pixels, et det enten én eller to pixels man ender op med, hvilket kan få grafikken til at se aliased ud \cite{Martin}. Mange moderne algoritmer prøver selv at løse problemet så det er mindre tydeligt at teksturen er blevet skaleret.\cite{Kopf} Det kan dog stadig være synligt, og desuden tager det også længere tid at lave en teksture med meget høj opløsning, end et med lavere opløsning. En anden løsning  kunne lave er at lave teksturene med lav opløsning, og derefter skalere dem op. Dette får dog teksturene til at se pixelerede ud \cite{McHugh}.
+Der opstår dog problemer når man skalerer ned. Hvis man f.eks. skalerer fire pixels ned til det halve, får man to pixels, men skalere man tre pixels ned til det halve, får man 1,5 pixels. Da man ikke kan have halve pixels, et det enten én eller to pixels man ender op med, hvilket kan få grafikken til at se aliased ud \cite{Martin}. Mange moderne algoritmer prøver selv at løse problemet så det er mindre tydeligt at teksturen er blevet skaleret.\cite{Kopf}.
 
-En tredje måde at gøre det på er at lave vektorgrafik, da de skalerer uendligt \cite{deepworldgame}. Det tager dog længere tid at lave vektorgrafik end normal grafik,\cite{deepworldgame} og derudover kræver vektorgrafik også mere cpu kraft, men mindre ram \cite{deepworldgame}. Derfor er der nogle platforme hvorpå vektorgrafik kan funkere bedre end andre, da cpu varierer meget fra platform til platform \cite{PassMark}.
+En anden måde at gøre det på er at lave vektorgrafik, da de skalerer uendligt. Det tager længere tid at lave vektorgrafik end normal grafik, derudover kræver vektorgrafik også mere cpu kraft, men mindre hukommelse\cite{deepworldgame}. Derfor er der nogle platforme hvorpå vektorgrafik kan funkere bedre end andre\cite{PassMark}.
 
-Der er ikke en bedste måde at løse skaleringsproblemer på, da det afhænger meget af det spil man laver, og hvor lang tid man har til at lave det. Generelt er det en god idé at lave teksturer i høj opløsning, da meget morderen software sørger for at det stadig ser godt ud når det bliver nedskaleret.
+Der er ikke en bedste måde at løse skaleringsproblemer på, da det afhænger meget af det spil man laver. Generelt er det en god idé at lave teksturer i høj opløsning, da meget morderen software sørger for at det stadig ser godt ud når det bliver nedskaleret.
 \end{document}
 
