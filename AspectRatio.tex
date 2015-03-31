@@ -29,50 +29,16 @@ Den ene måde at komme uden om problemet på, er at ændre på field of view (FO
 Hvis vi ser på et 2d spil, og forestiller os et endless runner spil, så som Robot Unicorn Attack\cite{RUAGame}, hvor at man kun ser hvad der er lige foran sin karakter, vil et bredere FOV betyde at man har længere tid til at forberede sig på de forhindringer der kommer forude.
 
 Hvis vi ser på et 3d spil, så som CS:GO \cite{CS:GOGame}, vil et bredere field of view betyde at spilleren kan se længere til siderne. Hvilket giver en stor fordel når det kommer til at få visuel kontakt med sine fjender. På figur \ref{CS_GO_16,9} ses f.eks. en dør til højre, som ikke kan ses på figur \ref{CS_GO_4,3} pga. forskellen i FOV.
-\clearpage
 
+Når hele spillet foregår på en flade hvorpå spillerens synsvinkel ikke ændre sig, kan man tage udgangspunkt i midten af sin baggrund, og dertil sørge for at lave en baggrund bred nok til at supportere et bredt aspekt ratio, og høj nok til at supportere et smalt et. På den måde sikres det passe samt give et godt indtryk på ethvert aspekt ratio. 
 
-\begin{figure}[h]
-\centering
-\parbox{7cm}{
-\includegraphics[width = 7cm]{billeder/CS_GO_4,3}
-\caption{CS:GO med aspekt ratio 4:3}    
-\label{CS_GO_4,3}}
-\qquad
-\begin{minipage}{9.33cm}
-\includegraphics[width = 9.33cm]{billeder/CS_GO_16,9}
-\caption{CS:GO med aspekt ratio 16:9}    
-\label{CS_GO_16,9}
-\end{minipage}
-\end{figure} 
+Det online kortspil Hearthstone \cite{HSGame} har grafik der går ud over selve den kvadratiske brugerflade, således at grafikken på en widescreen skærm også giver et godt visuelt indtryk, og ikke har et behov for at benytte sig af pillarboxes. På figur \ref{Hearthstone_4,3} og \ref{Hearthstone_16,9} ses det hvordan Hearthstone tilpasser sig den givne skærms aspekt ratio.
 
 \section{Letterbox}
 
 Den anden måde at komme uden om skaleringsproblemer på, er at tilføje sorte bjælker, også kaldet letterbox, til toppen og bunden af skærmen. På den måde tvinges spillet reelt set til at køre i et statisk aspekt ratio, og dermed er der ingen uretfærdigheder når det kommer til FOV \cite{computerhope}. Disse sorte bjælker kan også blive smidt på højre og venstre side af skærmen, og i disse tilfælde kaldes det pillarboxing \cite{Apple}. Nogle spil er nødt til at benytte sig af dette koncept, for at deres gameplay kan hænge sammen.
 
 Et af disse spil er Speedrunners \cite{SpeedrunnersGame}. Alle fire spillere ser på den samme del af spilverdenen, og når at en spiller falder for langt bagefter, og kommer uden for skærmen, bliver spilleren elimineret. I det at spillet afhænger af at en spiller kommer uden for skærmen, ville forskellige aspekt ratioer betyde at dem med et smallere FOV enten ville dø tidligere, eller vil være ude af stand til at se sin karakter mens han stadig er i live. Ved at tilføje letterboxes til spillere der ikke kører med et 16:9 aspekt ratio, sikre spillet sig at alle har det samme syn på spil verdenen, og der er enighed om hvornår at en spiller er ude af skærmen. På figur \ref{Speedrunners_16,9} ses spillet i det tiltænkte 16:9 aspekt ratio, og på figur \ref{Speedrunners_4,3} ses spillet i et 4:3 ratio hvor det er letterboxed.
-
-\begin{figure}[h]
-\centering
-\parbox{7cm}{
-\includegraphics[width = 7cm]{billeder/Speedrunners_4,3}
-\caption{Speedrunners med aspekt ratio 4:3}    
-\label{Speedrunners_4,3}}
-\qquad
-\begin{minipage}{9.33cm}
-\includegraphics[width = 9.33cm]{billeder/Speedrunners_16,9}
-\caption{Speedrunners med aspekt ratio 16:9}    
-\label{Speedrunners_16,9}
-\end{minipage}
-\end{figure}
-
-\section{Virtual viewport}
-
-På mobilmarkedet findes der ligeledes mange forskellige aspekt ratios \cite{CommonResolutions}, og det bearbejdes i store træk på samme måde som på platforme med større displays. Det er dog i de færreste tilfælde at det er attraktivt at tilføje letterboxes/pillarboxes til mobil platformen, da der i forvejen ikke er meget plads at arbejde med, og det i desuden kan give et indtryk af at spillet ikke er beregnet til den brugte model.
-
-Når hele spillet foregår på en flade hvorpå spillerens synsvinkel ikke ændre sig, kan en virtual viewport bruges til at vise en del af et environment, der kan justere sig selv efter dit aspekt ratio. Ved at lave en baggrund bred nok til at supportere et bredt aspekt ratio, og højt nok til at supportere et smalt et, kan man ved at tage udgangspunkt i midten af baggrunden, sikre at det vil give et godt indtryk på ethvert aspekt ratio. Dertil kan man sørge for at andre elementer på skærmen også justure sig selv efter kanterne af skærmen, for at sikre at de ikke bliver placeret på en måde der giver et upoleret indtryk \cite{gemserk}.
-
-Dette koncept benyttes også på andre platforme. F.eks. har det online kortspil Hearthstone \cite{HSGame} grafik der går ud over selve den kvadratiske brugerflade, således at grafikken på en widescreen skærm også giver et godt visuelt indtryk, uden et behov for at benytte sig af pillarboxes i siderne. På figur \ref{Hearthstone_4,3} og \ref{Hearthstone_16,9} ses det hvordan Heartstone tilpasser sig den givne skærms aspekt ratio.
 
 \begin{figure}[h]
 \centering
@@ -88,3 +54,31 @@ Dette koncept benyttes også på andre platforme. F.eks. har det online kortspil
 \end{minipage}
 \end{figure}
 \end{document}
+
+\begin{figure}[h]
+\centering
+\parbox{7cm}{
+\includegraphics[width = 7cm]{billeder/CS_GO_4,3}
+\caption{CS:GO med aspekt ratio 4:3}    
+\label{CS_GO_4,3}}
+\qquad
+\begin{minipage}{9.33cm}
+\includegraphics[width = 9.33cm]{billeder/CS_GO_16,9}
+\caption{CS:GO med aspekt ratio 16:9}    
+\label{CS_GO_16,9}
+\end{minipage}
+\end{figure} 
+
+\begin{figure}[h]
+\centering
+\parbox{7cm}{
+\includegraphics[width = 7cm]{billeder/Speedrunners_4,3}
+\caption{Speedrunners med aspekt ratio 4:3}    
+\label{Speedrunners_4,3}}
+\qquad
+\begin{minipage}{9.33cm}
+\includegraphics[width = 9.33cm]{billeder/Speedrunners_16,9}
+\caption{Speedrunners med aspekt ratio 16:9}    
+\label{Speedrunners_16,9}
+\end{minipage}
+\end{figure}

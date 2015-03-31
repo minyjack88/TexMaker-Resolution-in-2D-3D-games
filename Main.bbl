@@ -84,32 +84,6 @@
   \field{year}{2002}
 \endentry
 
-\entry{gemserk}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Garat}{G.}%
-     {Rubén}{R.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Coppes}{C.}%
-     {Ariel}{A.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{GRCA1}
-  \strng{fullhash}{GRCA1}
-  \field{sortinit}{G}
-  \field{title}{Our solution to handle multiple screen sizes in android part
-  one}
-  \verb{url}
-  \verb http://blog.gemserk.com/2013/01/22/our-solution-to-handle-multiple-scre
-  \verb en-sizes-in-android-part-one/
-  \endverb
-  \field{journaltitle}{Gemserk Blog}
-  \field{year}{2013}
-\endentry
-
 \entry{Gibson}{article}{}
   \name{author}{1}{}{%
     {{}%

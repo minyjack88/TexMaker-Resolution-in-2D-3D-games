@@ -14,8 +14,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Letterbox}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Virtual viewport}{3}
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Position og skalering}{5}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Tekstur skalering}{6}
