@@ -54,46 +54,17 @@
   \field{year}{2007}
 \endentry
 
-\entry{SpeedrunnersGame}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Build}{B.}%
-     {Tiny}{T.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{BT1}
-  \strng{fullhash}{BT1}
-  \field{sortinit}{B}
-  \field{title}{Speedrunners}
-  \field{year}{2015}
-\endentry
-
-\entry{CS:GOGame}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Corporation}{C.}%
-     {Valve}{V.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{CV1}
-  \strng{fullhash}{CV1}
-  \field{sortinit}{C}
-  \field{title}{Counter-Strike: Global Offensive}
-\endentry
-
 \entry{HSGame}{article}{}
   \name{author}{1}{}{%
     {{}%
-     {Entertainment}{E.}%
      {Blizzard}{B.}%
+     {}{}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{EB1}
-  \strng{fullhash}{EB1}
-  \field{sortinit}{E}
+  \strng{namehash}{B1}
+  \strng{fullhash}{B1}
+  \field{sortinit}{B}
   \field{title}{Hearthstone}
   \field{year}{2014}
 \endentry
@@ -101,31 +72,16 @@
 \entry{Warcraft3Game}{article}{}
   \name{author}{1}{}{%
     {{}%
-     {Entertainment}{E.}%
      {Blizzard}{B.}%
      {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{EB1}
-  \strng{fullhash}{EB1}
-  \field{sortinit}{E}
-  \field{title}{Warcraft III: Reign of Chaos}
-  \field{year}{2002}
-\endentry
-
-\entry{RUAGame}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Games}{G.}%
-     {Spiritonin~Media}{S.~M.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{GSM1}
-  \strng{fullhash}{GSM1}
-  \field{sortinit}{G}
-  \field{title}{Robot Unicorn Attack}
-  \field{year}{2010}
+  \strng{namehash}{B1}
+  \strng{fullhash}{B1}
+  \field{sortinit}{B}
+  \field{title}{Warcraft III: Reign of Chaos}
+  \field{year}{2002}
 \endentry
 
 \entry{gemserk}{article}{}
@@ -303,6 +259,21 @@
   \field{year}{2015}
 \endentry
 
+\entry{RUAGame}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Spiritonin}{S.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{S1}
+  \strng{fullhash}{S1}
+  \field{sortinit}{S}
+  \field{title}{Robot Unicorn Attack}
+  \field{year}{2010}
+\endentry
+
 \entry{Steam}{article}{}
   \name{author}{1}{}{%
     {{}%
@@ -311,14 +282,29 @@
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{S1}
-  \strng{fullhash}{S1}
+  \strng{namehash}{S2}
+  \strng{fullhash}{S2}
   \field{sortinit}{S}
   \field{title}{Steam Hardware and Software Survey: February 2015}
   \verb{url}
   \verb http://store.steampowered.com/hwsurvey
   \endverb
   \field{journaltitle}{steampowered}
+  \field{year}{2015}
+\endentry
+
+\entry{SpeedrunnersGame}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Tiny-Build}{T.-B.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{TB1}
+  \strng{fullhash}{TB1}
+  \field{sortinit}{T}
+  \field{title}{Speedrunners}
   \field{year}{2015}
 \endentry
 
@@ -339,6 +325,20 @@
   \endverb
   \field{journaltitle}{ScriptReference}
   \field{year}{2015}
+\endentry
+
+\entry{CS:GOGame}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Valve}{V.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{V1}
+  \strng{fullhash}{V1}
+  \field{sortinit}{V}
+  \field{title}{Counter-Strike: Global Offensive}
 \endentry
 
 \entry{CommonResolutions}{article}{}
