@@ -36,7 +36,7 @@ Hvis man så også skal skalerer alle spilobjekterne så de passer bedre til den
 \end{minipage}
 \end{figure}
 
-Et andet problem kan være spil objekternes kollisionsboks, da deres størrelse også kan være i pixels. Hvis et spilobjekts sprite nedskaleres uden at dets kollisions boks skaleres, vil objektets visuelle repræsentation være ude af sync med dets faktiske position og størrelse. Se figur \ref{MADscaling5} fra MAD, hvor positionen følger med opløsningen, men nogle af kollisionsboksene ikke gør. 
+Et andet problem kan være spil objekternes kollisionsboks, da deres størrelse også kan være i pixels. Hvis et spilobjekts sprite nedskaleres uden at dets kollisions boks skaleres, vil objektets visuelle repræsentation være ude af sync med dets faktiske position og størrelse. Se figur \ref{MADscaling5} fra MAD, hvor positionen følger med opløsningen, men nogle af kollisionsboksene ikke gør, især vognens kollisionsboks. 
 
 \begin{figure}[h]
 \centering
@@ -52,7 +52,7 @@ Et andet problem kan være spil objekternes kollisionsboks, da deres størrelse 
 \end{minipage}
 \end{figure}
 
-En løsning til disse problemer, er ved at lave koordinaterne baseret på procenter i forhold til skærmens størrelse. Hvis man vil placere et objekt et sted i spillet, skal dets koordinat være: \\*\\*
+En løsning vi fandt til disse problemer, er ved at lave koordinaterne baseret på procenter i forhold til skærmens størrelse. Hvis man vil placere et objekt et sted i spillet, skal dets koordinat være: \\*\\*
 \begin{math}
 \text{Produktions X } \times (\text{faktisk skærmbredde} \div \text{produktions skærmbredde}), \\*
 \text{Produktions Y} \times (\text{faktisk skærmhøjde} \div \text{productions skærmhøjde})\end{math} \\* \\*
@@ -61,14 +61,8 @@ Det sammen kan gøres med kollisions boksen, bare hvor det er i forhold til spri
 \text{produktions kollisions boks højde} \times (\text{faktisk spritehøjde} \div \text{produktions spritehøjde}).  \end{math}\\*
 
 Disse udregninger er brug I MAD. som det kan ses på figur \ref{MADscaling6}, og har løst problemerne involveret med fejlplaceret objekter og kollisionbokse.
-En anden løsning er at unlade at kode i skærm koordinator, og have game world koordinator, som ved hjælp af en kamera klasse, kan konverteres til skærm koordinator. Se kodeeksempel for et eksempel af en kamera klasse. \ref{kameraKlasse}
+En anden løsning er at unlade at kode i skærm koordinator, og have game world koordinator, som ved hjælp af en kamera klasse, kan konverteres til skærm koordinator. Se bilaget for et eksempel af en kamera klasse skrevet i c\#.
 Mange moderne frameworks og engines bruger også spilverdenens koordinater, eksempelvis Unity \cite{unity3d}, da der er så mange problemer med skærmkoordinater.
-
-
-\begin{figure}[h]
-\lstset{numbers=left, language=[Sharp]C}
-\lstinputlisting[caption = Et eksempel på en kamera klasse, label = kameraKlasse]{kode/Kamera.cs}
-\end{figure}
 
 \section{Tekstur skalering}
 I konstruktionen af assets til spil, er det et krav at teksturer og sprites skal kunne skalere efter skærmopløsningen på en given platform. En umiddelbar løsning ville indebære at tegne alle visuelle assets i høj opløsning og dermed sikrer at en høj kvalitet bliver opnået på høje skærmopløsninger \cite{deepworldgame}.
@@ -79,3 +73,8 @@ En tredje måde at gøre det på er at lave vektorgrafik, da de skalerer uendlig
 
 Der er ikke en bedste måde at løse skaleringsproblemer på, da det afhænger meget af det spil man laver, og hvor lang tid man har til at lave det. Generelt er det en god idé at lave teksturer i høj opløsning, da meget morderen software sørger for at det stadig ser godt ud når det bliver nedskaleret.
 \end{document}
+
+\begin{figure}[p]
+\lstset{numbers=left, language=[Sharp]C}
+\lstinputlisting[caption = Et eksempel på en kamera klasse, label = kameraKlasse]{kode/Kamera.cs}
+\end{figure}
