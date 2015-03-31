@@ -18,9 +18,9 @@ Hvis man lave et  2d spil uden et moderne framework eller engine, ligner det en 
 \end{minipage}
 \end{figure}
 
-De største problemer ved et skærm koordinatsystem opstår når skærmstørrelsen bliver ændret.  Eksempelvis hvis man vil have et objekt nede i det højre hjørne af skærmen, kan der ske problemer når  skærmopløsningen ændres, På figur \ref{MADscaling2} og \ref{MADscaling1} kan man se forskellen på hvordan spillet ser ud i to forskellige opløsninger. På figur \ref{MADscaling1} er det nederste højre hjørne koordinatet 1290,690, og på det figur \ref{MADscaling2} er det 1280,800. Fordi det ene spil er 110 pixel højere end det originale, betyder det at der er 110 pixels ned af y-aksen, som programmet ikke bruger.
+Problemerne ved et skærm koordinatsystem opstår når skærmstørrelsen bliver ændret. Eks. hvis man vil have et objekt nede i det højre hjørne af skærmen, kan der ske problemer når  skærmopløsningen ændres, På figur \ref{MADscaling1} og \ref{MADscaling2} kan man se to forskellige opløsninger. På figur \ref{MADscaling1} er det nederste højre hjørne koordinatet 1290,690, og på det figur \ref{MADscaling2} er det 1280,800. Fordi det ene spil er 110 pixel højere end det originale, betyder det at der er 110 pixels ned af y-aksen, som programmet ikke bruger.
 
-Hvis man så også skal skalerer alle spilobjekterne så de passer bedre til den nye opløsning, skal de skaleres med ca. 16\% \begin{math} (110 \div 690  = 0.1594203 \approx 0.16) \end{math}på y-aksen. Udover at det kommer til at se mærkeligt ud når spilobjekterne bliver skaleret, passer deres nye størrelse ikke til deres placering. Dette kan bedre ses på et mere ekstremt eksempel, som figur \ref{MADscaling4} hvor opløsningen er 860x345. Dette forårsage at man ikke kan se andet end baggrunden, fordi alle objekterne starter i højere koordinater end hvad skærmen indeholder.
+Hvis man så også skal skalerer alle spilobjekterne så de passer bedre til den nye opløsning, skal de skaleres med ca. 16\% \begin{math} (110 \div 690  = 0.1594203 \approx 0.16) \end{math}på y-aksen. Udover at det kommer til at se mærkeligt ud når spilobjekterne bliver skaleret, passer deres nye størrelse ikke til deres placering. Dette kan bedre ses på figur \ref{MADscaling4}, hvor opløsningen er 860x345. Dette forårsage at man ikke kan se andet end baggrunden, fordi alle objekterne starter i højere koordinater end hvad skærmen indeholder.
 
 \begin{figure}[h]
 \centering
@@ -52,7 +52,7 @@ Et andet problem kan være spil objekternes kollisionsboks, da deres størrelse 
 \end{minipage}
 \end{figure}
 
-En løsning vi fandt til disse problemer, er ved at lave koordinaterne baseret på procenter i forhold til skærmens størrelse. Hvis man vil placere et objekt et sted i spillet, skal dets koordinat være: \\*\\*
+En løsning vi fandt til disse problemer, er ved at lave koordinaterne i forhold til skærmopløsning. metoden for dette kunne være: \\*\\*
 \begin{math}
 \text{Produktions X } \times (\text{faktisk skærmbredde} \div \text{produktions skærmbredde}), \\*
 \text{Produktions Y} \times (\text{faktisk skærmhøjde} \div \text{productions skærmhøjde})\end{math} \\* \\*
@@ -60,9 +60,9 @@ Det sammen kan gøres med kollisions boksen, bare hvor det er i forhold til spri
 \begin{math}\text{Produktions kollisions boks bredde} \times (\text{faktisk spritebredde} \div \text{Produktions spritebredde}),\\*
 \text{produktions kollisions boks højde} \times (\text{faktisk spritehøjde} \div \text{produktions spritehøjde}).  \end{math}\\*
 
-Disse udregninger er brug I MAD. som det kan ses på figur \ref{MADscaling6}, og har løst problemerne involveret med fejlplaceret objekter og kollisionbokse.
-En anden løsning er at unlade at kode i skærm koordinator, og have game world koordinator, som ved hjælp af en kamera klasse, kan konverteres til skærm koordinator. Se bilaget for et eksempel af en kamera klasse skrevet i c\#.
-Mange moderne frameworks og engines bruger også spilverdenens koordinater, eksempelvis Unity \cite{unity3d}, da der er så mange problemer med skærmkoordinater.
+Disse udregninger er brugt I MAD, se figur \ref{MADscaling6}, hvilket har løst problemerne involveret med fejlplaceret objekter og kollisionbokse.
+En anden løsning er at unlade at kode i skærm koordinator, og have game world koordinator, som ved hjælp af en kamera klasse, kan konverteres til skærm koordinator. Se bilaget for et eksempel af en kamera klasse skrevet i C\#.
+Mange moderne frameworks og engines bruger også spilverdenens koordinater, eksempelvis Unity \cite{unity3d}.
 
 \section{Tekstur skalering}
 I konstruktionen af assets til spil, er det et krav at teksturer og sprites skal kunne skalere efter skærmopløsningen på en given platform. En umiddelbar løsning ville indebære at tegne alle visuelle assets i høj opløsning og dermed sikrer at en høj kvalitet bliver opnået på høje skærmopløsninger \cite{deepworldgame}.
