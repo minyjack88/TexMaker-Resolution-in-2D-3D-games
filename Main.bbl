@@ -119,25 +119,6 @@
   \field{year}{2015}
 \endentry
 
-\entry{Jonkers}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Jonkers}{J.}%
-     {Diorgo}{D.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{JD1}
-  \strng{fullhash}{JD1}
-  \field{sortinit}{J}
-  \field{title}{11 Tips for making a fun platformer}
-  \verb{url}
-  \verb http://devmag.org.za/2011/01/18/11-tips-for-making-a-fun-platformer/
-  \endverb
-  \field{journaltitle}{Dev:Meg}
-  \field{year}{2011}
-\endentry
-
 \entry{Kopf}{article}{}
   \name{author}{3}{}{%
     {{}%

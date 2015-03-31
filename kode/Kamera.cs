@@ -5,7 +5,7 @@ struct Point
    public float y = 0;
 }
 
-class Kamera
+class Camera
   {
     //The Position of the camera in game world coordinates.
     Point position;
@@ -17,7 +17,7 @@ class Kamera
     static const float maxXOnScreen = 100;
     static const float maxYOnScreen = 100;
 
-    Kamera(Point position, int screenHeight, int screenWidth)
+    Camera(Point position, int screenHeight, int screenWidth)
      {
          this.position = position;
          this.screenHeight = screenHeight;

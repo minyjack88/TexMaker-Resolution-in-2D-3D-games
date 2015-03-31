@@ -3,7 +3,8 @@
 \begin{document}
 
 	\maketitle
-
+	\pagenumbering{gobble}	
+		
 \chapter*{Abstract}
 This article will highlight the specific issues that can arise in relation to a dynamic screen resolution, as well as different ways of handling them.
 When a game is required to be played on several screen resolutions, issues can arise, due to the fact that the gameworld will be represented differently. When a game is scaled to a different resolution, it can cause the graphics to produce poor results, which makes it important for the developers to take scaling into consideration when creating the game. Different resolutions can also cause a difference in gameplay, when the aspect ratio is changed, making it even more important to find the optimal way of solving the issues.
@@ -14,20 +15,21 @@ Denne artikel er lavet til spil datamatikernes akademisk formidlings projekt / E
 Emnet omhandler hvilke komplikationer der kan opstå i forbindelse med valg af skærmopløsning i 2d og 3d spil, såvel som hvordan det kan forebygges. Der vil i denne artikel blive diskuteret de centrale problemstillinger der opstår, når at et spil skal kunne tilpasse sig mange forskellige skærmopløsninger, og hvordan det kan påvirke spilleren. 
 Det antages at læseren har en basal forståelse for spilprogrammering og koncepter involveret i spildesign.
 
+
 	\newpage
-		\pagestyle{plain}
+		\pagestyle{fancy}
 		\lhead{} \chead{} \rhead{} \lfoot{} \cfoot{} \rfoot{} 	
 	
 	\tableofcontents
 	
 	
 	\newpage	
-	
+	\pagenumbering{arabic}
 	\pagestyle{fancy}
-		\lhead{\leftmark}
+		\lhead{}
 		\lfoot{David Recke, Emil Vad, Simon Vinther}
 		\rfoot{\thepage\ af \pageref{LastPage}}
-		\rhead{\bfseries Komplikation med opløsning i 2D/3D spil}	
+		\rhead{\bfseries Komplikationer forbundet med skærmopløsning i spil}	
 		\renewcommand{\headrulewidth}{0.4pt}
 		\renewcommand{\footrulewidth}{0.4pt}
 	

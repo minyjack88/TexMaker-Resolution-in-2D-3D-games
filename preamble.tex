@@ -18,9 +18,12 @@
 \author{David Recke, Emil Vad, Simon Vinther}
 \title{Komplikationer forbundet med skærmopløsning i spil}
 \usepackage{etoolbox}
+
 \makeatletter
 \patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
 \makeatother
+
+
 
 \makeatletter
 \def\@makechapterhead#1{%
